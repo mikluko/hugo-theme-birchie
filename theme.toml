@@ -3,13 +3,13 @@
 
 name = "Archie"
 license = "MIT"
-licenselink = "https://github.com/athul/archie/blob/master/LICENSE"
-description = "Archie is a minimal and clean theme for hugo with a markdown-ish UI."
-homepage = "https://github.com/athul/archie"
-tags = ["blog","simple","responsive","minimal","tags","personal","clean","shortcodes"]
-features = ["blog", "Clean and minimal", "Responsive", "Syntax highlighting",]
+licenselink = "https://raw.githubusercontent.com/mikluko/hugo-theme-birchie/main/LICENSE"
+description = "Birchie is a minimal and clean theme for hugo with a markdown-ish UI."
+homepage = "https://github.com/mikluko/hugo-theme-birchie"
+tags = ["blog", "simple", "responsive", "minimal", "tags", "personal", "clean", "shortcodes"]
+features = ["blog", "Clean and minimal", "Responsive", "Syntax highlighting", ]
 min_version = "0.41"
 
-[author]
-  name = "Athul Cyriac Ajay"
-  homepage = "https://github.com/athul"
+[original]
+name = "Archie"
+homepage = "https://github.com/athul/archie"
