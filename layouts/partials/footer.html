@@ -1,14 +1,16 @@
 <footer>
-  <div style="display:flex">
-    {{- range $index, $key := .Site.Params.Social -}}
-    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-    <a class="border"></a>
-    {{- end -}}
-  </div>
-  <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
-  </div>
+    <div style="display:flex">
+        {{- range $index, $key := .Site.Params.Social -}}
+        {{- if gt $index 0 }}<a class="border"></a>{{- end -}}
+        <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+        {{- end -}}
+    </div>
+    <div class="footer-info">
+        {{ if ne .Site.Copyright "" }}{{ .Site.Copyright }} |{{- end }}
+        Built with <a href="https://gohugo.io">Hugo</a>
+        +
+        <a href="https://github.com/mikluko/hugo-theme-birchie">Birchie</a>
+    </div>
 </footer>
 {{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}
@@ -16,6 +18,6 @@
 
 {{- if (isset .Site.Params "social") -}}
 <script>
-  feather.replace()
+    feather.replace()
 </script>
 {{- end -}}
