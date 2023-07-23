@@ -1,0 +1,60 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Birchie"
+copyright = "© Authors and Contributors"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[[module.imports]]
+path = "github.com/mikluko/hugo-theme-birchie"
+
+[params]
+mode = "auto"
+useCDN = false
+subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/mikluko/hugo-theme-birchie)"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/mikluko/hugo-theme-birchie"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "#"
+
+[[params.social]]
+name = "Facebook"
+icon = "facebook"
+url = "#"
+
+[[params.social]]
+name = "Instagram"
+icon = "instagram"
+url = "#"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "#"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4

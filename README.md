@@ -36,6 +36,12 @@ tags: [tag names] (optional)
 ---
 ```
 
+## Running example site
+
+```bash
+hugo -s ./example server
+``` 
+
 ----
 
 ## Config Options
