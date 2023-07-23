@@ -10,19 +10,18 @@ body {
 }
 
 ::selection {
-    background: var(--darkMaincolor);;
+    background: var(--primaryDark);;
     color: #fff;
     text-shadow: none;
 }
 
 hr {
-    border-top: 3px dotted blue;
+    border-top: 3px dotted var(--border);
 }
 
 code {
     background-color: lightblue;
     color: black;
-    text-decoration: bold;
     padding: 0.1em 0.2em;
 }
 
@@ -34,7 +33,7 @@ pre {
 }
 
 blockquote {
-    border-color: blue;
+    border-color: var(--border);
 }
 
 h1,
@@ -47,42 +46,42 @@ h6 {
 }
 
 h1::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "# ";
 }
 
 h2::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "## ";
 }
 
 h3::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "### ";
 }
 
 h4::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "#### ";
 }
 
 h5::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "##### ";
 }
 
 h6::before {
-    color: var(--darkMaincolor);
+    color: var(--primaryDark);
     content: "###### ";
 }
 
 a {
-    border-bottom: 3px solid var(--darkMaincolor);
+    border-bottom: 3px solid var(--primaryDark);
     color: inherit;
 }
 
 a:hover {
-    background-color: var(--darkMaincolor);
+    background-color: var(--primaryDark);
     color: black;
 }
 
@@ -95,11 +94,11 @@ a:hover {
 }
 
 .tags a {
-    border-bottom: 3px solid var(--darkMaincolor);
+    border-bottom: 3px solid var(--primaryDark);
 }
 
 .tags a:hover {
-    background-color: var(--darkMaincolor);
+    background-color: var(--primaryDark);
     color: black;
 }
 
@@ -122,8 +121,8 @@ a:hover {
 }
 
 .draft-label {
-    color: var(--darkMaincolor);
-    background-color: blue;
+    color: var(--primaryDark);
+    background-color: var(--hover);
 }
 
 .highlight pre code[class=language-javaScript]::before,
